@@ -34,11 +34,11 @@ int main()
         switch (triagem)
     	{
         case 1: /*pessoa recebeu sd antes*/
-        printf("O ˙ltimo benefÌcio de Seguro Desemprego recebido, faz mais de 16 meses?[1]SIM ou [2]NAO:\n"); /*pergunta1.1*/
+        printf("O √∫ltimo benef√≠cio de Seguro Desemprego recebido, faz mais de 16 meses?[1]SIM ou [2]NAO:\n"); /*pergunta1.1*/
         scanf("%d", &triagem_1);
             switch(triagem_1)
             {
-                case 2: /*pessoa recebeu a menos de 16 meses n„o pode */
+                case 2: /*pessoa recebeu a menos de 16 meses n√£o pode */
                 printf("Voce nao tem direito ao beneficio pois o recebeu em periodo inferior a 16 meses.\n");
                 system("PAUSE");
                 
@@ -47,7 +47,7 @@ int main()
                 scanf("%d", &triagem_2);
                     switch (triagem_2)
                     {
-                    case 2: /*saiu por justa causa, n„o pode*/
+                    case 2: /*saiu por justa causa, n√£o pode*/
                     printf("Voce nao tem direito ao beneficio pois saiu por justa causa do seu ultimo emprego.\n");
                     system("PAUSE");
                     case 1: /*saiu sem justa causa, continua questionario*/
@@ -55,18 +55,18 @@ int main()
                     scanf("%d", &triagem_3);
                         switch (triagem_3)
                         {
-                            case 1: /*pessoa possui renda n„o pode */
+                            case 1: /*pessoa possui renda n√£o pode */
                             printf("Voce nao tem direito ao beneficio pois possui renda propria.\n");
                             system("PAUSE");
-                            case 2: /*pessoa n„o possui renda, continua questionario */
+                            case 2: /*pessoa n√£o possui renda, continua questionario */
                             printf("Recebe beneficio previdenciario de prestacao continuada? (exceto auxilio acidente e pensao por morte)[1]SIM ou [2]NAO:\n"); /*pergunta4*/
                             scanf("%d", &triagem_4);
                                 switch (triagem_4)
                                 {
-                                case 1: /*pessoa recebe benefÌcio previdenci·rio, n„o pode */
-                                printf("Voce n„o tem direito ao beneficio pois ja recebe beneficio de prestaÁ„o continuada.\n");
+                                case 1: /*pessoa recebe benef√≠cio previdenci√°rio, n√£o pode */
+                                printf("Voce n√£o tem direito ao beneficio pois ja recebe beneficio de presta√ß√£o continuada.\n");
                                 system("PAUSE");
-                                case 2: /*n„o recebe previdenci·rio, fim triagem, respondeu tudo ok atÈ aqui*/
+                                case 2: /*n√£o recebe previdenci√°rio, fim triagem, respondeu tudo ok at√© aqui*/
                                 printf("Obrigada pelas respostas! Agora vamos tracar que tipo de trabalhador voce e.\n");
                                 break;
                                 default:
@@ -89,29 +89,29 @@ int main()
                 system("PAUSE");
             }
         break;
-        case 2: /*pessoa n„o recebeu sd antes, continua questionario */
-        printf("Em seu ˙ltimo emprego foi dispensado SEM justa causa?[1]SIM ou [2]NAO:\n");
+        case 2: /*pessoa n√£o recebeu sd antes, continua questionario */
+        printf("Em seu √∫ltimo emprego foi dispensado SEM justa causa?[1]SIM ou [2]NAO:\n");
         scanf("%d", &triagem_2);
             switch (triagem_2)
             {
             case 1: /*saiu sem justa causa, continua questionario*/
-            printf("Atualmente possui renda propria de qualquer natureza suficiente ‡ sua manutenÁ„o e a de sua famÌlia? [1]SIM ou [2]NAO:\n");
+            printf("Atualmente possui renda propria de qualquer natureza suficiente √† sua manuten√ß√£o e a de sua fam√≠lia? [1]SIM ou [2]NAO:\n");
             scanf("%d", &triagem_3);
                 switch (triagem_3)
                 {
-                case 1: /*pessoa possui renda n„o pode */
-                printf("Voce n„o tem direito ao beneficio pois possui renda prÛpria.\n");
+                case 1: /*pessoa possui renda n√£o pode */
+                printf("Voce n√£o tem direito ao beneficio pois possui renda pr√≥pria.\n");
                 system("PAUSE");
-                case 2: /*pessoa n„o possui renda, continua questionario */
-                printf("Recebe beneficio previdenci·rio de prestaÁ„o continuada? (exceto auxÌlio acidente e pens„o por morte)[1]SIM ou [2]NAO:\n");
+                case 2: /*pessoa n√£o possui renda, continua questionario */
+                printf("Recebe beneficio previdenci√°rio de presta√ß√£o continuada? (exceto aux√≠lio acidente e pens√£o por morte)[1]SIM ou [2]NAO:\n");
                 scanf("%d", &triagem_4);
                     switch (triagem_4)
                     {
-                    case 1: /*pessoa recebe benefÌcio previdenci·rio, n„o pode */
-                    printf("Voce n„o tem direito ao beneficio pois j· recebe benefÌcio de prestaÁ„o continuada.\n");
+                    case 1: /*pessoa recebe benef√≠cio previdenci√°rio, n√£o pode */
+                    printf("Voce n√£o tem direito ao beneficio pois j√° recebe benef√≠cio de presta√ß√£o continuada.\n");
                     system("PAUSE");
-                    case 2: /*n„o recebe previdenci·rio, fim triagem, respondeu tudo ok atÈ aqui*/
-                    printf("Obrigada pelas respostas! Agora vamos traÁar que tipo de trabalhador vocÍ È.\n");
+                    case 2: /*n√£o recebe previdenci√°rio, fim triagem, respondeu tudo ok at√© aqui*/
+                    printf("Obrigada pelas respostas! Agora vamos tra√ßar que tipo de trabalhador voc√™ √©.\n");
                     break;
                     default:
                     printf("Resposta invalida, por favor digite apenas [1]SIM ou [2]NAO");
@@ -123,8 +123,8 @@ int main()
                 system("PAUSE");
                 }
             break;
-            case 2: /*saiu por justa causa n„o pode*/
-            printf("Voce n„o tem direito ao beneficio pois foi dispensado por justa causa.\n");
+            case 2: /*saiu por justa causa n√£o pode*/
+            printf("Voce n√£o tem direito ao beneficio pois foi dispensado por justa causa.\n");
             system("PAUSE");
             default:
             printf("Resposta invalida, por favor digite apenas [1]SIM ou [2]NAO");
@@ -140,37 +140,37 @@ int main()
         printf("\n\nTIPO DE TRABALHADOR\n"); /*INICIO QUESTIONARIO TIPO TRABALHADOR */
         printf("\nPor favor responda as perguntas a seguir com 1 para sim ou 2 para nao:\n");
   
-        printf("E trabalhador formal? [1]SIM ou [2]N√O: \n");
+        printf("E trabalhador formal? [1]SIM ou [2]N√ÉO: \n");
         scanf("%d", &tformal);
         switch (tformal) 
             {
-                case 1: /*È trabalhador formal */
+                case 1: /*√© trabalhador formal */
                     printf("Recebeu  salarios de PJ ou PF, no periodo de 6 meses anteriores a data de dispensa? [1]SIM ou [2]NAO:\n");
-                    scanf("%d", &tformal_1); /* 1™ condiÁ„o tformal*/
+                    scanf("%d", &tformal_1); /* 1¬™ condi√ß√£o tformal*/
                     switch (tformal_1) 
                         {
-                            case 2: /*n„o recebeu salario de pf ou pj, n„o pode */
+                            case 2: /*n√£o recebeu salario de pf ou pj, n√£o pode */
                                 printf("Voce nao atende as condicoes para receber o beneficio.\n");
                                 system("PAUSE");
                             case 1: /*recebeu salario de pf ou pj, continua questionario */
-                                printf("Esta desempregado atualmente? [1]SIM ou [2]N√O:\n"); /*2™ condiÁ„o */
+                                printf("Esta desempregado atualmente? [1]SIM ou [2]N√ÉO:\n"); /*2¬™ condi√ß√£o */
                                 scanf("%d", &tformal_2); 
                                 
                             switch (tformal_2)
                             {
-                                case 2: /*n„o est· desempregado, n„o pode */
+                                case 2: /*n√£o est√° desempregado, n√£o pode */
                                     printf("Voce nao atende as condicoes para receber o beneficio.\n");
                                     system("PAUSE");
-                                case 1: /* est· desempregado, continua questionario */
-                                    printf("Foi empregado de pessoa juridica ou de pessoa fisica equiparada ‡ juridica, pelo menos 12 meses nos ultimos 36 meses que antecedem a data de dispensa? [1]SIM ou [2]NAO:\n");
-                                    scanf("%d", &tformal_3); /*3™ condiÁ„o */
+                                case 1: /* est√° desempregado, continua questionario */
+                                    printf("Foi empregado de pessoa juridica ou de pessoa fisica equiparada √† juridica, pelo menos 12 meses nos ultimos 36 meses que antecedem a data de dispensa? [1]SIM ou [2]NAO:\n");
+                                    scanf("%d", &tformal_3); /*3¬™ condi√ß√£o */
                                     
                                 switch (tformal_3)
                                 {
-                                    case 2: /*n„o foi empregado, n„o pode */
+                                    case 2: /*n√£o foi empregado, n√£o pode */
                                         printf("Voce nao atende as condicoes para receber o beneficio.\n");
                                         system("PAUSE");
-                                    case 1: /* foi empregado, atÈ aqui tudo ok */
+                                    case 1: /* foi empregado, at√© aqui tudo ok */
                                         printf("Voce atende as condicoes para receber o beneficio, vamos agora calcular o numero de parcelas e valor:\n");
                                         iniciocalculo == 1;
                                         break;
@@ -189,42 +189,42 @@ int main()
                                 system("PAUSE");
                         }
                     break;    
-                case 2: /*n„o È trabalhador formal, outra pergunta */ 
-                    printf("E empregado domÈstico? [1]SIM ou [2]N?O: \n");
+                case 2: /*n√£o √© trabalhador formal, outra pergunta */ 
+                    printf("E empregado dom√©stico? [1]SIM ou [2]N?O: \n");
                     scanf("%d", &tdomest);
                 switch (tdomest)
                 {
-                    case 1: /*È domestico, continua questionario */
+                    case 1: /*√© domestico, continua questionario */
                         printf("Trabalhou exclusivamente como empregado domestico por no minimo 15 meses nos ultimos 24 meses que antecederam a data de dispensa? [1]SIM ou [2]NAO:\n");
                         scanf("%d", &tdomest_1);
                     switch (tdomest_1) 
                     {
-                        case 1: /*atende condiÁ„o 1, final questionario */
-                            printf("Voce atende as condicoes para receber o beneficio, vamos agora calcular o n˙mero de parcelas e valor:\n");
+                        case 1: /*atende condi√ß√£o 1, final questionario */
+                            printf("Voce atende as condicoes para receber o beneficio, vamos agora calcular o n√∫mero de parcelas e valor:\n");
                             iniciocalculo == 1;
                             break;
-                        case 2: /*n„o atende condiÁ„o, n„o pode */ 
+                        case 2: /*n√£o atende condi√ß√£o, n√£o pode */ 
                             printf("Voce nao atende as condicoes para receber o beneficio.\n");
                             system("PAUSE");
                         default:
-                            printf("Resposta invalida, por favor digite apenas [1]SIM ou [2]N√O\n");
+                            printf("Resposta invalida, por favor digite apenas [1]SIM ou [2]N√ÉO\n");
                             system("PAUSE");
                     }
                     break;
-                    case 2: /*n„o È domestico, continua questionario */
+                    case 2: /*n√£o √© domestico, continua questionario */
                         printf("Teve contrato de trabalho suspenso em virtude de participacao em curso ou programa de qualificacao profissional oferecida pelo empregador? [1]SIM ou [2]NAO: \n");
                         scanf("%d", &tqualif);
                         switch(tqualif)
                             {
-                                case 1: /*È tqualif, vai para condiÁ„o 1 */
+                                case 1: /*√© tqualif, vai para condi√ß√£o 1 */
                                     printf("Esta devidamente matriculado em curso ou programa de qualificacao profissional oferecido pelo empregador? [1]SIM ou [2]NAO:");
                                     scanf("%d", &tqualif_1);
                                     switch(tqualif_1)
                                 {
-                                    case 2: /* n„o est· matriculado, n„o pode */
+                                    case 2: /* n√£o est√° matriculado, n√£o pode */
                                         printf("Voce nao atende as condicoes para receber o beneficio.\n");
                                         system("PAUSE");
-                                    case 1: /*atende a condiÁ„o, vai para calculo de valor */
+                                    case 1: /*atende a condi√ß√£o, vai para calculo de valor */
                                         printf("Voce atende as condicoes para receber o beneficio, vamos agora calcular o numero de parcelas e valor:\n");
                                         iniciocalculo == 1;
                                         break;
@@ -233,36 +233,36 @@ int main()
                                     system("PAUSE");
                                 }
                                     break;
-                                case 2: /*n„o È tqualif continua questionario tipo trabalhador */
+                                case 2: /*n√£o √© tqualif continua questionario tipo trabalhador */
                                     printf("E pescador profissional durante periodo de defeso: [1]SIM ou [2]NAO: \n");
                                     scanf("%d", &tpesc);
                                     switch(tpesc)
                                     {
-                                        case 1: /*È pescador vai para condiÁ„o 1 */
+                                        case 1: /*√© pescador vai para condi√ß√£o 1 */
                                             printf("Possui inscricao no INSS como segurado especial? [1]SIM ou [2]NAO:\n");
                                             scanf("%d", &tpesc_1);
                                             switch(tpesc_1)
                                             {
-                                                case 2: /*n„o atende condiÁ„o 1, n„o pode */
+                                                case 2: /*n√£o atende condi√ß√£o 1, n√£o pode */
                                                     printf("Voce nao atende as condicoes para receber o beneficio.\n"); 
                                                     system("PAUSE");
-                                                case 1: /*atende condiÁ„o 1, continua questionario */
+                                                case 1: /*atende condi√ß√£o 1, continua questionario */
                                                     printf("Possui comprovacao de venda do pescado a adquirinte pessoa juridica ou cooperativa, no periodo correspondente aos ultimos 12 meses que antecederam o periodo do defeso? [1]SIM ou [2]NAO:\n");
                                                     scanf("%d", &tpesc_2);
                                                 switch (tpesc_2)
                                                 {
-                                                    case 2: /*n„o atende condiÁ„o 2, n„o pode */
+                                                    case 2: /*n√£o atende condi√ß√£o 2, n√£o pode */
                                                         printf("Voce nao atende as condicoes para receber o beneficio.\n"); 
                                                         system("PAUSE");
-                                                    case 1: /*atende a condiÁ„o 2, continua */
+                                                    case 1: /*atende a condi√ß√£o 2, continua */
                                                         printf("Pode comprovar o exercicio profissional da atividade de pesca artesanal objeto do defeso e que se dedicou a pesca, em carater ininterrupto, durante o periodo compreendido entre o defeso anterior e o em curso? [1]SIM ou [2]NAO \n");
                                                         scanf("%d", &tpesc_3);
                                                     switch (tpesc_3)
                                                     {
-                                                        case 2: /*n„o atende condiÁ„o 3, n„o pode */
+                                                        case 2: /*n√£o atende condi√ß√£o 3, n√£o pode */
                                                             printf("Voce nao atende as condicoes para receber o beneficio.\n"); 
                                                             system("PAUSE");
-                                                        case 1: /* atende a condiÁ„o 3, continua */
+                                                        case 1: /* atende a condi√ß√£o 3, continua */
                                                             printf("Possui vinculo de emprego ou outra relacao de trabalho ou outra fonte de renda diversa da decorrente da atividade pesqueira? [1]SIM ou [2]NAO:\n");
                                                             scanf("%d", &tpesc_4);
                                                         switch(tpesc_4)
@@ -345,14 +345,14 @@ int main()
     	scanf("%d", &rVESO);
     }
     else {
-        printf("Fim da execuÁ„o.\n");
+        printf("Fim da execu√ß√£o.\n");
         system("PAUSE");
     }
     	if (rVESO == 1) {
-    		printf("Antes da data de demiss„o, vocÍ recebeu o sal·rio por trÍs ou dois meses? \n1) TrÍs meses \n2) Dois meses\n");
+    		printf("Antes da data de demiss√£o, voc√™ recebeu o sal√°rio por tr√™s ou dois meses? \n1) Tr√™s meses \n2) Dois meses\n");
   			scanf("%d", &rI);
     	} else {
-    		printf("VocÍ n„o tem direito\n");
+    		printf("Voc√™ n√£o tem direito\n");
     		system("PAUSE");
 		}   
   
@@ -416,7 +416,7 @@ int main()
 	
           
       }
-       printf("\nVocÍ receber· %d parcelas de %lf\n\n", parcelas, valorParcela);
+       printf("\nVoc√™ receber√° %d parcelas de %lf\n\n", parcelas, valorParcela);
       	}}	
  return 0;
 }
