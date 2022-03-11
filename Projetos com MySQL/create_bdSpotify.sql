@@ -1,11 +1,4 @@
-/*
-Fatec Zona Leste
-Curso: Desenvolvimento de Software Multiplataforma
-Professor: Francisco Douglas Lima Abreu
-Matéria: Banco de Dados Relacional
-Nome: Lisandra Ferraz de Santana
-R.A.: 1111392111042
-*/
+
 
 CREATE TABLE bdSpotify.`tbGravadora`(
 	grav_cod INT,
